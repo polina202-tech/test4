@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форматирование текста</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+			line-height: 1.6;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: Calibri, sans-serif;
+			color: purple;
+			font-size: 5em;
+			margin-bottom: 30px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.formula-title {
+			font-size: 4em;
+			color: blue;
+			margin-top: 30px;
+		}
+
+		.formula {
+			font-style: italic;
+		}
+
+		.right-align {
+			text-align: right;
+			text-decoration: underline;
+			margin-top: 30px;
+		}
+
+		.completion {
+			font-size: 4em;
+			color: yellow;
+			margin-top: 30px;
+		}
+
+		pre {
+			background-color: #f5f5f5;
+			padding: 15px;
+			border-radius: 5px;
+			overflow-x: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- a) Заголовок первого уровня -->
+	<h1>Форматирование текста</h1>
+
+	<!-- b) Преформатированный текст по центру -->
+	<div class="center">
+		<h2>Преформатированный текст</h2>
+	</div>
+
+	<!-- c) Таблица с использованием тега <pre> -->
+	<pre>
++-------------+-------------+-------------+
+| Цвет        | Код         | Именной код |
++-------------+-------------+-------------+
+| Красный     | #FF0000     | Red         |
+| Синий       | #0000FF     | Blue        |
+| Зелёный     | #008000     | Green       |
++-------------+-------------+-------------+
+    </pre>
+
+	<!-- d) Заголовок формул -->
+	<div class="formula-title">Формулы:</div>
+
+	<!-- e) Формулы курсивом -->
+	<p class="formula">E = mc²</p>
+	<p class="formula">a² + b² = c²</p>
+	<p class="formula">F = G * (m₁ * m₂) / r²</p>
+	<p class="formula">V = π * r² * h</p>
+
+	<!-- f) Выравнивание по правому краю с подчеркиванием -->
+	<div class="right-align">
+		Выравнивание по правому краю
+	</div>
+
+	<!-- g) Завершение -->
+	<div class="completion">Завершение</div>
+</body>
+
+</html>
