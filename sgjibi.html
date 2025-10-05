@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Продукты питания</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+			line-height: 1.8;
+		}
+
+		.custom-list {
+			list-style-type: none;
+			padding-left: 0;
+		}
+
+		.custom-list li {
+			margin-bottom: 5px;
+		}
+
+		.roman {
+			list-style-type: upper-roman;
+			font-weight: bold;
+		}
+
+		.disc::before {
+			content: "▪ ";
+			margin-right: 5px;
+		}
+
+		.alpha {
+			list-style-type: lower-alpha;
+			padding-left: 30px;
+		}
+
+		.circle::before {
+			content: "○ ";
+			margin-right: 5px;
+		}
+
+		.decimal {
+			list-style-type: decimal;
+			padding-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Покупки</h1>
+
+	<ol class="roman">
+		<li>
+			Фрукты
+			<ul class="custom-list">
+				<li class="disc">Яблоки
+					<ul class="alpha">
+						<li>Зеленые</li>
+						<li>Красные</li>
+					</ul>
+				</li>
+				<li class="circle">Апельсины</li>
+				<li>Груши</li>
+			</ul>
+		</li>
+		<li>Прочее
+			<ol class="decimal">
+				<li>Жлеб</li>
+				<li>Молоко</li>
+				<li>Сыр
+					<ul class="alpha">
+						<li>Обычный</li>
+						<li>Плавленый</li>
+					</ul>
+				</li>
+				<li>Яйца</li>
+			</ol>
+		</li>
+	</ol>
+</body>
+
+</html>
